@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Bienvenido
+{% endblock %}
+
+
+{% block content %}
+    <div class="hero">
+        <div class="hero-content">
+            <div class="left">
+                <h1>Developer</h1>
+                <h1>Alejandro Monasterios</h1>
+                <p> 
+                    I'm a recent graduate in informatics with expertise in languages like Python and JavaScript.
+                    I'm passionate about technology and constantly strive to stay updated with the latest industry trends.
+                
+                    Alongside my technical skills, I have practical experience in costumer service from my roles as a waiter and bartender.
+                    These experiences have sharpened my interpersonal skills.
+                
+                    Feel free to contact me to discuss how I can contribute with you.
+                </p>
+                <a href="{{ url_for('portfolio.contact') }}" class="btn">Contact me</a>
+            </div>
+            <div class="right">
+                <img src="{{ url_for('static', filename='big-data.png') }}" width=600px>
+            </div>
+        </div>
+    </div>
+{% include 'portfolio/section-second.html' %}
+{% endblock %}

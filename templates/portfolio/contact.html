@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Contacto
+{% endblock %}
+
+{% block content %}
+<div class="hero">
+    <div class="hero-content">
+        <div class="left">
+            <h1>Hi !</h1>
+            <p>
+                I'm always up for a chat!
+                I can be reached at <strong>alejandromf9622@gmail.com</strong>
+            </p>
+        </div>
+        <div class="right">
+            <img src="{{ url_for('static', filename='email-read.png') }}" width=500px>
+        </div>
+    </div>
+</div>
+{% endblock %}
