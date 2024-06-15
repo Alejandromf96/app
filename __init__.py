@@ -1,4 +1,5 @@
 from flask import Flask
+import os
 import portfolio
 
 def create_app():
@@ -10,4 +11,4 @@ def create_app():
 
 if __name__ == '__main__':
     app = create_app()
-    app.run()
+    app.run(debug=True, host="0.0.0.0")
