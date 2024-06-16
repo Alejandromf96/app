@@ -272,3 +272,98 @@ input:checked + .slider {
 input:checked + .slider:before {
     transform: translateX(26px);
 }
+
+/* Media Queries para Responsiveness */
+
+/* Tablets y pantallas medianas */
+@media (max-width: 768px) {
+    .hero .hero-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .left {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .btn {
+        font-size: 16px;
+        padding: 8px 20px;
+    }
+    
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul {
+        text-align: center;
+        padding: 0;
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    .content {
+        width: 100%;
+        padding: 0 20px;
+    }
+    
+    .card {
+        flex: 1 0 45%;
+    }
+}
+
+/* Teléfonos móviles y pantallas pequeñas */
+@media (max-width: 480px) {
+    .hero .hero-content {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    .hero h1 {
+        font-size: 36px;
+    }
+    
+    .hero p {
+        font-size: 16px;
+    }
+    
+    .left {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .btn {
+        font-size: 14px;
+        padding: 6px 15px;
+    }
+    
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul {
+        text-align: center;
+        padding: 0;
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    .content {
+        width: 100%;
+        padding: 0 10px;
+    }
+    
+    .card {
+        flex: 1 0 100%;
+    }
+}
